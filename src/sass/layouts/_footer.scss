@@ -1,3 +1,38 @@
 .footer {
-  background-color: #c2a18b;
+  background-color: #84A178;
+}
+
+.footer-title {
+   font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.22;
+    text-transform: uppercase;
+  
+    color: #FCFCFC;
+
+    margin-bottom: 16px;
+
+    @media screen and (min-width: 768px) {
+      
+        font-size: 26px;
+        line-height: 1.23;
+        letter-spacing: 0.04em;
+      
+    }
+}
+
+.footer-subtitle{
+  font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 41px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  
+    color: #FCFCFC;
+
+    margin-bottom: 40px;
 }
