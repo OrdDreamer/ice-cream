@@ -1,2 +1,11 @@
 :root {
+  --accent-font: 'Montserrat', sans-serif;
+  --primary-font: 'Seymour One', sans-serif;
+
+  --accent-color: #fcfcfc;
+  --secondary-color: #131313;
+  --background-primary: #84a278;
+  --background-secondary: #f8d24e;
+
+  --transition-hover: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
