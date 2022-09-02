@@ -1,3 +1,89 @@
 <section class="header">
-  <h2>Header</h2>
+  <header class="page-header">
+    <div class="container">
+      <nav class="main-nav">
+        <a class="logo" href="./index.html">
+          <picture>
+            <source
+              srcset="
+                ./images/header/logo/icecream/desktop/logo-desktop-60x65@1x.png 1x,
+                ./images/header/logo/icecream/desktop/logo-desktop-60x65@2x.png 2x
+              "
+              media="(min-width: 1200px)"
+            />
+            <source
+              srcset="
+                ./images/header/logo/icecream/tablet/logo-tablet-48x44@1x.png 1x,
+                ./images/header/logo/icecream/tablet/logo-tablet-48x44@2x.png 2x
+              "
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="
+                ./images/header/logo/icecream/mobile/logo-mobile-40x37@1x.png 1x,
+                ./images/header/logo/icecream/mobile/logo-mobile-40x37@2x.png 2x
+              "
+              media="(max-width: 767px)"
+            />
+            <img
+              src="./images/header/logo/icecream/mobile/logo-mobile-40x37@1x.png"
+              alt="The company logo is depicted in the form of ice cream"
+            />
+          </picture>
+        </a>
+        <ul class="header-nav">
+          <li class="header-nav__item"><a class="header-nav__link" href="#">Home</a></li>
+          <li class="header-nav__item"><a class="header-nav__link" href="#">About us</a></li>
+          <li class="header-nav__item"><a class="header-nav__link" href="#">How it’s made?</a></li>
+          <li class="header-nav__item"><a class="header-nav__link" href="#">Our products</a></li>
+          <li class="header-nav__item"><a class="header-nav__link" href="#">Contact</a></li>
+        </ul>
+        <button class="mobile-menu-open-btn" type="button" data-menu-open>
+          <svg class="mobile-menu-open__icon" width="32px" height="32px">
+            <use href="./images/header/header-sprite.svg#icon-burger-button"></use>
+          </svg>
+        </button>
+        <button class="buy-now-button" type="button">Buy now</button>
+      </nav>
+    </div>
+    <div class="mobile-menu" data-menu>
+      <div class="container mobile-menu__container">
+        <a class="logo logo--mobile-menu" href="./index.html">
+          <picture>
+            <source
+              srcset="
+                ./images/header/logo/icecream/tablet/logo-tablet-48x44@1x.png 1x,
+                ./images/header/logo/icecream/tablet/logo-tablet-48x44@2x.png 2x
+              "
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="
+                ./images/header/logo/icecream/mobile/logo-mobile-40x37@1x.png 1x,
+                ./images/header/logo/icecream/mobile/logo-mobile-40x37@2x.png 2x
+              "
+              media="(max-width: 767px)"
+            />
+            <img
+              src="./images/header/logo/icecream/mobile/logo-mobile-40x37@1x.png"
+              alt="The company logo is depicted in the form of ice cream"
+            />
+          </picture>
+        </a>
+        <button class="mobile-menu__close-btn" data-menu-close>
+          <svg class="mobile-menu__close-icon" width="32px" height="32px">
+            <use href="./images/header/header-sprite.svg#icon-close-cross-mobile-menu"></use>
+          </svg>
+        </button>
+        <ul class="mobile-nav">
+          <li class="mobile-nav__item"><a class="mobile-nav__link" href="#">Home</a></li>
+          <li class="mobile-nav__item"><a class="mobile-nav__link" href="#">About us</a></li>
+          <li class="mobile-nav__item"><a class="mobile-nav__link" href="#">How it’s made?</a></li>
+          <li class="mobile-nav__item"><a class="mobile-nav__link" href="#">Our products</a></li>
+          <li class="mobile-nav__item"><a class="mobile-nav__link" href="#">Contact</a></li>
+        </ul>
+        <button class="buy-now-mobile-button" type="button">Buy now</button>
+      </div>
+    </div>
+  </header>
 </section>
