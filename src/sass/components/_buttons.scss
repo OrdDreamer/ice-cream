@@ -1,0 +1,116 @@
+.filled-button {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background-color: #f8d24e;
+  padding: 12px 34px;
+  border-radius: 10px;
+
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.29;
+  color: #131313;
+
+  &:hover,
+  &:focus {
+    background-color: #0a8817;
+  }
+
+  &:disabled {
+    background-color: #ababab;
+  }
+
+  &:focus {
+    color: #fcfcfc;
+  }
+
+  & .button-icon {
+    stroke: #131313;
+    fill: none;
+  }
+
+  &:focus .button-icon {
+    stroke: #fcfcfc;
+  }
+}
+
+.contour-button {
+  border: 2px solid #f8d24e;
+  padding: 10px 32px;
+  border-radius: 10px;
+
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.29;
+  color: #131313;
+
+  &:hover,
+  &:focus {
+    border-color: #0a8817;
+  }
+
+  &:disabled {
+    border-color: #ababab;
+  }
+
+  &:focus {
+    color: #fcfcfc;
+  }
+}
+
+.contour-button-adaptive {
+  @include media-to-desktop-resolution {
+    padding: 5px 10px;
+    font-size: 8px;
+    line-height: 10px;
+  }
+}
+
+.contour-button-wide {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  @extend .contour-button;
+  padding: 12px 46px;
+
+  & .button-icon {
+    stroke: #131313;
+    fill: none;
+  }
+
+  &:focus .button-icon {
+    stroke: #fcfcfc;
+  }
+}
+
+.pseudo-link-button {
+  padding: 12px 22px;
+  border-radius: 10px;
+
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.29;
+  color: #f8d24e;
+  text-decoration-line: underline;
+
+  &:hover,
+  &:focus {
+    color: #0a8817;
+  }
+
+  &:disabled {
+    color: #ababab;
+  }
+
+  &:focus {
+    color: #fcfcfc;
+  }
+}
+
+.pseudo-link-button-adaptive {
+  @include media-to-desktop-resolution {
+    padding: 7px 10px;
+    font-size: 8px;
+    line-height: 10px;
+  }
+}
