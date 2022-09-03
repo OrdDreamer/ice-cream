@@ -1,3 +1,39 @@
-<section class="gallery">
-  <h2>Gallery</h2>
+<section class="gallery container">
+  <picture>
+    <source
+      srcset="
+        ./images/gallery/desktop/gallery-desktop-1013x422@1x.jpg 1x,
+        ./images/gallery/desktop/gallery-desktop-1013x422@2x.jpg 2x,
+        ./images/gallery/desktop/gallery-desktop-1013x422@3x.jpg 3x
+      "
+      media="(min-width: 1200px)"
+      type="image/jpeg"
+    />
+    <source
+      srcset="
+        ./images/gallery/tablet/gallery-tablet-704x327@1x.jpg 1x,
+        ./images/gallery/tablet/gallery-tablet-704x327@2x.jpg 2x,
+        ./images/gallery/tablet/gallery-tablet-704x327@3x.jpg 3x
+      "
+      media="(min-width: 768px)"
+      type="image/jpeg"
+    />
+    <source
+      srcset="
+        ./images/gallery/mobile/gallery-mobile-279x131@1x.jpg 1x,
+        ./images/gallery/mobile/gallery-mobile-279x131@2x.jpg 2x,
+        ./images/gallery/mobile/gallery-mobile-279x131@3x.jpg 3x
+      "
+      media="(max-width: 767px)"
+      type="image/jpeg"
+    />
+    <img
+      class="gallery__image"
+      src="./images/gallery/mobile/gallery-mobile-279x131@1x.jpg"
+      alt="Ice cream photo"
+    />
+    <!-- 94px -->
+    <!-- 194 -->
+    <!-- 24px -->
+  </picture>
 </section>

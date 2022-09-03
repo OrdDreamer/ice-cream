@@ -1,3 +1,44 @@
 .gallery {
-  background-color: #ebc8b2;
+  background-color: #ebc8b2; // TODO delete
+}
+
+.gallery__image {
+  margin: 0 auto;
+  border-radius: 25px;
+}
+
+@include media-to-tablet-resolution {
+  .gallery {
+    padding-top: 18px;
+    padding-bottom: 25px;
+  }
+
+  .gallery__image {
+    max-width: 279px;
+    max-height: 131px;
+  }
+}
+
+@include media-from-tablet-resolution {
+  .gallery {
+    padding-top: 20px;
+    padding-bottom: 16px;
+  }
+
+  .gallery__image {
+    width: 704px;
+    height: 327px;
+  }
+}
+
+@include media-from-desktop-resolution {
+  .gallery {
+    padding-top: 44px;
+    padding-bottom: 48px;
+  }
+
+  .gallery__image {
+    width: 1013px;
+    height: 422px;
+  }
 }
