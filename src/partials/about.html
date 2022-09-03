@@ -1,3 +1,63 @@
-<section class="about">
-  <h2>About</h2>
+<section id="about" class="section-about">
+  <div class="container">
+    <p class="about__title-label">tradition and love</p>
+    <h2 class="about__title">
+      how <br class="about__br" />
+      it’s <br class="about__br" />
+      made?
+    </h2>
+
+    <ul class="about__list list">
+      <li class="about__wripper-img">
+        <picture>
+          <source
+            srcset="
+              ./images/about/desktop/cow-desktop.png    1x,
+              ./images/about/desktop/cow-desktop@2x.png 2x
+            "
+            media="(min-width: 1200px)"
+          />
+          <source
+            srcset="
+              ./images/about/tablet/cow-tablet.png    1x,
+              ./images/about/tablet/cow-tablet@2x.png 2x
+            "
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="
+              ./images/about/mobile/cow-mobile.png    1x,
+              ./images/about/mobile/cow-mobile@2x.png 2x
+            "
+            media="(max-width: 767px)"
+          />
+          <img class="about__img" src="./images/about/mobile/cow-mobile.png" alt="cow" />
+        </picture>
+      </li>
+      <li class="about__wripper-text">
+        <ul class="about__list-text list">
+          <li class="about__item-text about__text-first">
+            <p class="about__text">
+              Ice is a place where you will become not only a little happier, but also healthier.
+              Health is the main value for us, and we follow it when creating our handabout
+              desserts.
+            </p>
+          </li>
+          <li class="about__item-text about__text-second">
+            <p class="about__text">
+              We use traditional recipes and 100% natural ingredients. Our products are so natural
+              that they can be given to children from the age of three years. Sweets lovers can
+              expect 55 types of ice cream, 15 types of coffee and 23 milkshakes.
+            </p>
+          </li>
+          <li class="about__item-text about__text-three">
+            <p class="about__text">This is enough to choose ice cream and coffee for any mood!</p>
+          </li>
+          <li>
+            <button class="about__button" type="button" data-modal-open>Read more</button>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
 </section>
