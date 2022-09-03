@@ -2,31 +2,6 @@ body {
     background-color: #84A178;
 }
 
-// .contacts-container {
-//     height: calc(100% - 354px);
-
-//     @media screen and (min-width:768px) {
-//         height: calc(100% - 304px);
-//     }
-
-//     @media screen and (min-width:1200px) {
-//         height: calc(100% - 96px);
-//     }
-// }
-
-.contacts-div {
-    position: relative;
-    bottom: 345px;
-    
-    @media screen and (min-width:768px) {
-        bottom: 304px;
-    }
-
-    @media screen and (min-width:1200px) {
-        bottom: 96px;
-    }
-}
-
 .contacts {
     display: flex;
     gap: 20px;
