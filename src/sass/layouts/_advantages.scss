@@ -1,3 +1,135 @@
 .advantages {
-  background-color: #efd1bf;
+  position: relative;
+  // padding-top: 50px;
+  padding-bottom: 40px;
+  font-style: normal;
+  font-weight: 700;
+  text-align: center;
+  color: #fcfcfc;
+  background-color: rgba(132, 161, 120, 1);
 }
+.advantages__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 53px;
+    padding-bottom: 204px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 189px;
+  }
+}
+.advantages__items {
+  position: relative;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: calc((100% - 160px) / 3);
+    margin-right: 80px;
+
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+    &:nth-last-child(-n + 3) {
+      margin-bottom: 0;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 32px * 2) / 3);
+    margin-right: 32px;
+
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+    &:nth-last-child(-n + 3) {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.advantages__title {
+  padding-top: 106px;
+  padding-bottom: 18px;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 150px;
+    font-size: 48px;
+    line-height: 1.23;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 58px;
+  }
+}
+.advantages__text {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Montserrat';
+  font-size: 12px;
+  line-height: 1.67;
+
+  @media screen and (max-width: 767px) {
+    width: 230px;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 189px;
+    font-size: 16px;
+    line-height: 1.75;
+    letter-spacing: 0.02em;
+  }
+}
+.advantages__wrapper::after {
+  position: absolute;
+  content: '';
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #f8d24e;
+  left: 45%;
+  top: 20%;
+
+  @media screen and (min-width: 768px) {
+    left: 37%;
+  }
+
+  @media screen and (min-width: 1200px) {
+    top: 13%;
+  }
+}
+// не вдається розібратися з іконками. Термінал видає помилку при підключенні файлів із зображеннями !!!!!!
+
+// .advantages__wrapper--cow::after {
+//   background-image: url('../../images/advantage/cow-1x.png');
+// }
+// @media screen and (min-device-pixel-ratio: 2),
+//   screen and (min-resolution: 192dpi),
+//   screen and (min-resolution: 2dppx) {
+//   .advantages__wrapper--cow::after {
+//     background-image: url('../../images/advantage/cow-2x.png');
+//   }
+// }
+// @media (min-device-pixel-ratio: 3), (min-resolution: 288dpi), (min-resolution: 3dppx) {
+//   .advantages__wrapper--cow::after {
+//     background-image: url('../../images/advantage/cow-3x.png');
+//   }
+// }
+// .advantages__wrapper--weight::after {
+//   // background-image: url('../../images/advantage/cow-1x.png');
+// }
+// .advantages__wrapper--ice-cream::after {
+//   //background-image: url('../../images/advantage/cow-1x.png');
+// }
