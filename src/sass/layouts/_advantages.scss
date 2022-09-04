@@ -1,7 +1,5 @@
 .advantages {
   position: relative;
-  // padding-top: 50px;
-  padding-bottom: 40px;
   font-style: normal;
   font-weight: 700;
   text-align: center;
@@ -11,47 +9,42 @@
 .advantages__list {
   padding: 0;
   margin: 0;
+  padding-top: 40px;
+  padding-bottom: 60px;
   list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 28px;
+
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+  }
 
   @media screen and (min-width: 768px) {
-    display: flex;
-    flex-wrap: wrap;
+    gap: 80px;
     padding-top: 53px;
     padding-bottom: 204px;
   }
   @media screen and (min-width: 1200px) {
+    gap: 32px;
     padding-bottom: 189px;
   }
 }
 .advantages__items {
-  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
-    width: calc((100% - 160px) / 3);
-    margin-right: 80px;
-
-    &:nth-child(3n) {
-      margin-right: 0;
-    }
-    &:nth-last-child(-n + 3) {
-      margin-bottom: 0;
-    }
+    flex-basis: calc((100% - 160px) / 3);
   }
   @media screen and (min-width: 1200px) {
-    width: calc((100% - 32px * 2) / 3);
-    margin-right: 32px;
-
-    &:nth-child(3n) {
-      margin-right: 0;
-    }
-    &:nth-last-child(-n + 3) {
-      margin-bottom: 0;
-    }
+    flex-basis: calc((100% - 64px) / 3);
   }
 }
 
 .advantages__title {
-  padding-top: 106px;
+  padding-top: 16px;
   padding-bottom: 18px;
   font-size: 36px;
   line-height: 1.17;
@@ -59,12 +52,12 @@
   text-transform: uppercase;
 
   @media screen and (min-width: 768px) {
-    padding-top: 150px;
+    padding-top: 32px;
     font-size: 48px;
     line-height: 1.23;
   }
   @media screen and (min-width: 1200px) {
-    font-size: 58px;
+    font-size: 40px;
   }
 }
 .advantages__text {
@@ -92,44 +85,67 @@
     letter-spacing: 0.02em;
   }
 }
-.advantages__wrapper::after {
-  position: absolute;
+.advantages__items::before {
+  display: block;
   content: '';
   width: 50px;
   height: 50px;
   border-radius: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
   background-color: #f8d24e;
-  left: 45%;
-  top: 20%;
+  background-size: 36px 36px;
+}
 
-  @media screen and (min-width: 768px) {
-    left: 37%;
-  }
-
-  @media screen and (min-width: 1200px) {
-    top: 13%;
+.advantages__items--cow::before {
+  background-image: url('../images/advantage/cow-1x.png');
+}
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .advantages__items--cow::before {
+    background-image: url('../images/advantage/cow-2x.png');
   }
 }
-// не вдається розібратися з іконками. Термінал видає помилку при підключенні файлів із зображеннями !!!!!!
+@media (min-device-pixel-ratio: 3),
+  screen and (min-resolution: 288dpi),
+  screen and (min-resolution: 3dppx) {
+  .advantages__items--cow::before {
+    background-image: url('../images/advantage/cow-3x.png');
+  }
+}
 
-// .advantages__wrapper--cow::after {
-//   background-image: url('../../images/advantage/cow-1x.png');
-// }
-// @media screen and (min-device-pixel-ratio: 2),
-//   screen and (min-resolution: 192dpi),
-//   screen and (min-resolution: 2dppx) {
-//   .advantages__wrapper--cow::after {
-//     background-image: url('../../images/advantage/cow-2x.png');
-//   }
-// }
-// @media (min-device-pixel-ratio: 3), (min-resolution: 288dpi), (min-resolution: 3dppx) {
-//   .advantages__wrapper--cow::after {
-//     background-image: url('../../images/advantage/cow-3x.png');
-//   }
-// }
-// .advantages__wrapper--weight::after {
-//   // background-image: url('../../images/advantage/cow-1x.png');
-// }
-// .advantages__wrapper--ice-cream::after {
-//   //background-image: url('../../images/advantage/cow-1x.png');
-// }
+.advantages__items--weight::before {
+  background-image: url('../images/advantage/weight-1x.png');
+}
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .advantages__items--weight::before {
+    background-image: url('../images/advantage/weight-2x.png');
+  }
+}
+@media (min-device-pixel-ratio: 3),
+  screen and (min-resolution: 288dpi),
+  screen and (min-resolution: 3dppx) {
+  .advantages__items--weight::before {
+    background-image: url('../images/advantage/weight-3x.png');
+  }
+}
+.advantages__items--ice-cream::before {
+  background-image: url('../images/advantage/ice-cream-1x.png');
+}
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .advantages__items--ice-cream::before {
+    background-image: url('../images/advantage/ice-cream-2x.png');
+  }
+}
+@media (min-device-pixel-ratio: 3),
+  screen and (min-resolution: 288dpi),
+  screen and (min-resolution: 3dppx) {
+  .advantages__items--ice-cream::before {
+    background-image: url('../images/advantage/ice-cream-3x.png');
+  }
+}
