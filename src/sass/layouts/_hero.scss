@@ -264,3 +264,19 @@
     left: 15px;
   }
 }
+
+.ice-cream-hero {
+  position: absolute;
+  top: 121px;
+  left: 111px;
+  pointer-events: none;
+
+  @include media-from-tablet-resolution {
+    top: -90px;
+    left: 365px;
+  }
+  @include media-from-desktop-resolution {
+    top: -119px;
+    left: 540px;
+  }
+}
