@@ -11,6 +11,8 @@
   line-height: 1.29;
   color: #131313;
 
+  transition: color var(--transition-hover), background-color var(--transition-hover);
+
   &:hover,
   &:focus {
     background-color: #0a8817;
@@ -27,6 +29,7 @@
   & .button-icon {
     stroke: #131313;
     fill: none;
+    transition: stroke var(--transition-hover);
   }
 
   &:focus .button-icon {
@@ -43,6 +46,8 @@
   font-size: 14px;
   line-height: 1.29;
   color: #131313;
+
+  transition: color var(--transition-hover), border-color var(--transition-hover);
 
   &:hover,
   &:focus {
@@ -76,6 +81,7 @@
   & .button-icon {
     stroke: #131313;
     fill: none;
+    transition: stroke var(--transition-hover);
   }
 
   &:focus .button-icon {
@@ -92,6 +98,8 @@
   line-height: 1.29;
   color: #f8d24e;
   text-decoration-line: underline;
+
+  transition: color var(--transition-hover);
 
   &:hover,
   &:focus {
