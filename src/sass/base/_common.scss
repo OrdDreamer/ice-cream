@@ -1,5 +1,10 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
 
+body {
+  font-family: var(--primary-font);
+  color: var(--primary-color);
+}
+
 ul {
   margin: 0;
   padding: 0;
