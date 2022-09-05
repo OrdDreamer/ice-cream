@@ -308,6 +308,17 @@
     }
 }
 
+.contacts-modal-franchise__text {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+
+
+    color: #131313;
+}
+
 
 
 .modal-form {
@@ -315,6 +326,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    gap: 12px;
 }
 
 .modal-form-field {
@@ -322,12 +335,14 @@
     line-height: 1.16;
     letter-spacing: 0.01em;
     margin-bottom: 4px;
+    width: 100%;
 }
 
 .modal-form-input {
-    height: 40px;
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    border-radius: 4px;
+    height: 32px;
+    border: 1px solid #84A178;
+    background-color: rgba(248, 210, 78, 0.1);
+    border-radius: 10px;
     padding: 7px 12px;
     outline: none;
     width: 100%;
@@ -337,20 +352,36 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
     cursor: pointer;
+
+    &:hover,
+    &:focus,
+    &:focus-visible {
+        border-color: var(--Logo-bt-link);
+    }
+
+    &::placeholder {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 140%;
+        /* identical to box height, or 17px */
+    
+    
+        color: #131313;
+    }
 }
 
-.modal-form-input:hover,
-.modal-form-input:focus,
-.modal-form-input:focus-visible {
-    border-color: var(--Logo-bt-link);
-}
+
 
 .modal-form-message {
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    border-radius: 4px;
-    padding: 12px 16px;
+    border: 1px solid #84A178;
+    background-color: rgba(248, 210, 78, 0.1);
+    border-radius: 10px;
+    padding: 12px 8px;
     outline: none;
     height: 120px;
+    width: 100%;
 
     resize: none;
 
@@ -360,7 +391,14 @@
 }
 
 .modal-form-message::placeholder {
-    color: rgba(117, 117, 117, 0.5);
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 140%;
+
+
+    color: #131313;
 }
 
 .modal-form-message:hover,
