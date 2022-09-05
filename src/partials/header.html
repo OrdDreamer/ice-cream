@@ -46,7 +46,7 @@
             <use href="./images/header/header-sprite.svg#icon-burger-button"></use>
           </svg>
         </button>
-        <button class="filled-button buy-now-button" type="button">
+        <button class="filled-button buy-now-button" type="button" data-buy-now-modal-open>
           Buy now
           <svg class="button-icon" width="12" height="12">
             <use href="./images/icons.svg#icon-button-arrow"></use>
@@ -103,3 +103,25 @@
     </div>
   </header>
 </section>
+<div class="buy-now-backdrop is-hidden" data-buy-now-modal>
+  <div class="buy-now-modal">
+    <button class="buy-now-modal-close" type="button" data-buy-now-modal-close>
+      <svg class="about-modal-icon-close" width="20" height="20">
+        <use href="./images/icons.svg#about-modal-icon-close"></use>
+      </svg>
+    </button>
+    <p class="sorry-text">Не встиг виконати розмітку модального вікна. Прошу вибачення</p>
+    <ul class="modal-buttons">
+      <li>
+        <button class="modal-buttons__choise modal-buttons__choise--good-button">
+          Нічого страшного - це не обов'язкове завдання
+        </button>
+      </li>
+      <li>
+        <button class="modal-buttons__choise modal-buttons__choise--bad-button">
+          Ай-ай-ай! Треба було встигати!
+        </button>
+      </li>
+    </ul>
+  </div>
+</div>
