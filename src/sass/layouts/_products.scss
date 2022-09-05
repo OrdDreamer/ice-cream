@@ -1,3 +1,145 @@
-.products {
-  background-color: #f6e3d8;
+.section-products {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  // background-image: url(../images/products/desktop/fon-desktop.jpg);
+  // background-color: var(--primary-color) ;
 }
+.products__title-lable {
+  font-family: var(--primary-font);
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 1.23;
+  text-align: center;
+  letter-spacing: 4%;
+  text-transform: uppercase;
+  color: var(--secondary-color);
+  margin-bottom: 12px;
+}
+
+.products__title {
+  font-family: var(--secondary-font);
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.25;
+  text-align: center;
+  letter-spacing: 6%;
+  text-transform: uppercase;
+
+  color: var(--secondary-color);
+
+  margin-bottom: 120px;
+}
+// .products__wripper-img{
+//   width: 200px;
+//   height: 200px;
+
+//   position: relative;
+//   display: inline-block;
+
+//   border-radius: 101.5px;
+//  }
+
+.product__list {
+  display: flex;
+  gap: 32px; // tablet gap 16px // mobile 164px
+}
+
+.products__wripper-list {
+  position: relative;
+  padding-bottom: 15px;
+  padding-top: 123px;
+  // width: 280px;
+  border-radius: 30px;
+  flex-basis: calc((100% - 64px) / 3);
+}
+.product-one {
+  background: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #d9d9d9;
+  box-shadow: 0px 5.34px 20.03px rgba(10, 136, 23, 0.25);
+}
+.product__text {
+  font-family: var(--primary-font);
+  font-family: 400px;
+  font-size: 16px;
+  line-height: 1.75;
+  letter-spacing: 4%;
+  width: 200px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  margin-bottom: 110px;
+}
+.products__wripper-list::before {
+  display: block;
+  position: absolute;
+  content: '';
+  width: 301px;
+  height: 301px;
+  border-radius: 50%;
+  background-color: rgba(156, 190, 143, 0.7);
+  box-shadow: 0 8px 30px rgba(10, 136, 23, 0.25);
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -55%);
+}
+.products__wripper-list::after {
+  display: block;
+  position: absolute;
+  content: '';
+  background-repeat: no-repeat;
+  height: 301px;
+  width: 301px;
+  background-position: center;
+  background-image: url(../images/products/desktop/cream-desktop.png);
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -61%);
+}
+.product__item-text {
+  margin-bottom: 40px;
+}
+// @media screen and (min-width: 1200px){
+//   .products__wripper-img{
+//     width: 370.16px;
+//     // padding: 40px;
+//     }
+
+//   .product__img {
+//     bottom: 17px;
+//     width: 300px;
+//     height: 300px;
+//          }
+//   }
+
+//  @media screen and (min-width: 768px) and (max-width: 1199px) {
+//   .products__wripper-img{
+//     width: 224px;
+//     // padding: 40px 24px;
+//   }
+// }
+// .product__list{
+//   justify-content: center;
+//   // gap: 20px;
+//   display: flex;
+// }
+
+// @media screen and (min-width: 768px) {
+//   .product__list{
+//     gap: 16px;
+//   }
+// }
+// @media screen and (min-width: 1200px) {
+//   .product__list {
+//     gap: 32px;
+//     }
+
+//     .products__wripper-img {
+//       width: 300px;
+//       height: 300px;
+
+//     background: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(248, 210, 78, 0.7)), #d9d9d9;
+//     box-shadow: 0px 8px 30px rgba(10, 136, 23, 0.25);
+//     border-radius: 150px;
+
+//       margin-bottom: 32px;
+//     }
+// }
