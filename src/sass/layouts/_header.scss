@@ -27,7 +27,7 @@
   @include media-from-desktop-resolution {
     display: flex;
     gap: 27px;
-    margin-right: 146px;
+    margin-right: 247px;
   }
 }
 
@@ -68,9 +68,12 @@
 
 .buy-now-button {
   display: none;
+  @include media-in-tablet-resolution {
+    margin-left: 38px;
+  }
+
   @include media-from-tablet-resolution {
     display: flex;
-    margin-left: 38px;
   }
 }
 
@@ -149,7 +152,7 @@
   flex-direction: column;
   gap: 32px;
   align-items: center;
-  margin-bottom: 40px;
+  margin-bottom: 111px;
 
   @include media-in-tablet-resolution {
     gap: 40px;
