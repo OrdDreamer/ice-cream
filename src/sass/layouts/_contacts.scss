@@ -1,9 +1,14 @@
 body {
-    background-color: #84A178;
+    background-image: linear-gradient(to top,#84A178 25%, #84A178 100%);
 }
+
+// .contacts-container {
+//     background-color: linear-gradient(to top, #84A178 25%);
+// }
 
 .contacts {
     display: flex;
+    margin-top: 48px;
     gap: 20px;
     justify-content: center;
 
@@ -167,4 +172,45 @@ body {
     line-height: 18px;
 
     color: #131313;
+
+    @media screen and (min-width:768px) {
+        font-size: 14px;
+    }
+
+    @media screen and (min-width:1200px) {
+        font-size: 16px;
+    }
+}
+
+.contacts__buttons {
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    margin-top: 32px;
+    gap: 16px;
+
+    @media screen and (max-width:767px) {
+        flex-direction: column;
+    }
+
+    @media screen and (min-width:768px) {
+        margin-top: 60px;
+    }
+
+    @media screen and (min-width:1200px) {
+        margin-top: 64px;
+    }
+}
+
+.contacts__buttons>.filled-button {
+    width: 196px;
+    height: 42px;
+    justify-content: center;
+}
+
+.contacts__buttons > .contour-button-wide {
+    width: 196px;
+    height: 42px;
+    justify-content: center;
 }
