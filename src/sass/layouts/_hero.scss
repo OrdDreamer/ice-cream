@@ -107,6 +107,11 @@
 }
 
 .points__link {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 20px;
+
   font-family: 'Montserrat';
   font-weight: 900;
   font-size: 28px;
@@ -115,6 +120,14 @@
   text-transform: uppercase;
 
   color: var(--secondary-color);
+
+  transition: transform var(--transition-hover);
+  transform-origin: center right;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.2);
+  }
 
   @include media-from-desktop-resolution {
     font-size: 46px;
@@ -247,6 +260,15 @@
 
   @include media-from-desktop-resolution {
     margin-left: 241px;
+  }
+}
+
+.hero__more-information-icon {
+  transition: transform var(--transition-hover);
+
+  .hero__more-information:hover &,
+  .hero__more-information:focus & {
+    transform: scale(1.3);
   }
 }
 
