@@ -1,3 +1,114 @@
-.customer-reviews {
-  background-color: #ddbba5;
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.customer-reviews-slider-wrapper {
+  align-items: center;
+}
+
+.customer-reviews-slider-pagination {
+  display: flex;
+  justify-content: center;
+}
+
+.customer-reviews-slider-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #d9d9d9;
+
+  &.swiper-pagination-bullet-active {
+    background-color: var(--primary-background);
+  }
+}
+
+.review {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+
+.review__customer-photo {
+  border-radius: 50%;
+}
+
+.review__message {
+  background-color: var(--primary-background);
+  width: 100%;
+  text-align: center;
+  letter-spacing: 0.04em;
+}
+
+.review__title {
+  font-weight: 500;
+  line-height: 1.86;
+  text-align: center;
+  color: var(--secondary-color);
+}
+
+@include media-in-mobile-resolution {
+  .review__message {
+    border-radius: 10px;
+    padding: 34px 39px;
+    font-size: 12px;
+    line-height: 2.55;
+  }
+
+  .review__title {
+    font-size: 20px;
+  }
+}
+
+@include media-to-tablet-resolution {
+  .customer-reviews-slider-wrapper {
+    margin-bottom: 14px;
+  }
+
+  .customer-reviews-slider-wrapper {
+    margin-bottom: 14px;
+  }
+
+  .customer-reviews {
+    padding-top: 40px;
+    padding-bottom: 24px;
+  }
+}
+
+@include media-in-tablet-resolution {
+  .review__message {
+    padding: 29px 80px;
+    font-size: 14px;
+  }
+}
+
+@include media-from-tablet-resolution {
+  .customer-reviews-slider-wrapper {
+    margin-bottom: 32px;
+  }
+
+  .customer-reviews-slider-wrapper {
+    margin-bottom: 32px;
+  }
+
+  .review__message {
+    border-radius: 24px;
+    padding: 39px 109px 47px;
+    font-weight: 500;
+    line-height: 1.86;
+  }
+
+  .customer-reviews {
+    padding-top: 30px;
+    padding-bottom: 40px;
+  }
+}
+
+@include media-from-desktop-resolution {
+  .customer-reviews {
+    padding-top: 64px;
+    padding-bottom: 50px;
+  }
 }
