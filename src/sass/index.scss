@@ -1,8 +1,8 @@
-@import './base/common';
-
 @import './utils/variables';
 @import './utils/mixins';
 @import './utils/vissually-hiden';
+
+@import './base/common';
 
 @import './components/container';
 @import './components/buttons';
