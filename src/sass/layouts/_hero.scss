@@ -294,8 +294,9 @@
 
 .ice-cream-hero {
   position: absolute;
-  top: 121px;
-  left: 111px;
+  top: 0;
+  left: 0;
+  transform: translate(11%, 44%);
   pointer-events: none;
 
   animation-name: scaleAnimation;
