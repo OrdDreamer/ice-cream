@@ -280,7 +280,7 @@
   animation-name: rotateAnimation;
   animation-duration: 1000ms;
   animation-timing-function: linear;
-  animation-iteration-count: 1;
+  animation-iteration-count: 2;
 
   @include media-to-tablet-resolution {
     display: none;
@@ -298,8 +298,8 @@
   left: 10%;
   pointer-events: none;
 
-  animation-name: scaleAnimation;
-  animation-duration: 1000ms;
+  animation-name: translateAnimation;
+  animation-duration: 2000ms;
   animation-timing-function: linear;
   animation-iteration-count: 1;
 
