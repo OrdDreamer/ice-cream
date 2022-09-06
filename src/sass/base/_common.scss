@@ -3,6 +3,13 @@
 body {
   font-family: var(--primary-font);
   color: var(--primary-color);
+  background-image: url(../images/background.svg);
+}
+
+@include media-to-tablet-resolution {
+  body {
+    background-size: contain;
+  }
 }
 
 ul {
