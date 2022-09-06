@@ -1,6 +1,6 @@
 .hero {
   position: relative;
-  background-color: #84a178;
+  background-color: var(--primary-background);
   padding-top: 30px;
   padding-bottom: 239px;
   background-repeat: no-repeat;
@@ -112,7 +112,6 @@
   align-items: flex-end;
   gap: 12px;
 
-  font-family: 'Montserrat';
   font-weight: 900;
   font-size: 28px;
   line-height: 0.7;
@@ -136,7 +135,6 @@
 }
 
 .point__type {
-  font-family: 'Montserrat';
   font-weight: 400;
   font-size: 8px;
   line-height: 1.25;
@@ -215,7 +213,7 @@
   }
 
   &:focus {
-    color: #fcfcfc;
+    color: var(--primary-color);
   }
   @include media-from-desktop-resolution {
     padding: 13px 32px;
@@ -266,6 +264,7 @@
 
 .hero__more-information-icon {
   transition: transform var(--transition-hover);
+  transform-origin: left center;
 
   .hero__more-information:hover &,
   .hero__more-information:focus & {
@@ -281,7 +280,7 @@
   animation-name: rotateAnimation;
   animation-duration: 1000ms;
   animation-timing-function: linear;
-  animation-iteration-count: 2;
+  animation-iteration-count: 1;
 
   @include media-to-tablet-resolution {
     display: none;
@@ -300,7 +299,7 @@
   pointer-events: none;
 
   animation-name: scaleAnimation;
-  animation-duration: 2000ms;
+  animation-duration: 1000ms;
   animation-timing-function: linear;
   animation-iteration-count: 1;
 
