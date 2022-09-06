@@ -294,9 +294,8 @@
 
 .ice-cream-hero {
   position: absolute;
-  top: 0;
-  left: 0;
-  transform: translate(11%, 44%);
+  top: 78%;
+  left: 10%;
   pointer-events: none;
 
   animation-name: scaleAnimation;
@@ -305,11 +304,11 @@
   animation-iteration-count: 1;
 
   @include media-from-tablet-resolution {
-    top: -90px;
-    left: 365px;
+    top: -21%;
+    left: 48%;
   }
   @include media-from-desktop-resolution {
-    top: -119px;
-    left: 540px;
+    top: -26%;
+    left: 46%;
   }
 }
