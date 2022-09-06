@@ -1,18 +1,18 @@
 .contacts-container {
-    padding-top: 48px;
+    padding-top: 24px;
     background-image: linear-gradient(to bottom,
         rgba(0, 0, 0, 0) 27%,
         var(--primary-background) 27%);
 
     @media screen and (min-width:768px) {
-        padding-top: 80px;
+        padding-top: 40px;
         background-image: linear-gradient(to bottom,
             rgba(0, 0, 0, 0) 54%,
             var(--primary-background) 54%);
     }
 
     @media screen and (min-width:1200px) {
-        padding-top: 100px;
+        padding-top: 50px;
         background-image: linear-gradient(to bottom,
             rgba(0, 0, 0, 0) 26%,
             var(--primary-background) 26%);
@@ -21,7 +21,6 @@
 
 .contacts {
     display: flex;
-    margin-top: 48px;
     gap: 20px;
     justify-content: center;
 
@@ -126,11 +125,14 @@
 }
 
 .contacts__work {
+    display: flex;
+    flex-direction: column;
     margin-top: 24px;
     margin-bottom: 24px;
     padding: 24px 0;
     border-top: 1px solid #E1E1E1;
     border-bottom: 1px solid #E1E1E1;
+    gap: 8px;
 
     @media screen and (min-width:768px) {
         margin-top: 32px;
