@@ -1,12 +1,12 @@
-@import './base/common';
-@import './components/animations';
-
 @import './utils/variables';
 @import './utils/mixins';
 @import './utils/vissually-hiden';
 
+@import './base/common';
+
 @import './components/container';
 @import './components/buttons';
+@import './components/animations';
 
 @import './layouts/header';
 @import './layouts/hero';
