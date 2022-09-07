@@ -10,6 +10,25 @@
     flex-wrap: wrap;
   }
 }
+
+@include media-to-tablet-resolution {
+  .footer-container {
+    padding-bottom: 40px;
+  }
+}
+
+@include media-in-tablet-resolution {
+  .footer-container {
+    padding-bottom: 32px;
+  }
+}
+
+@include media-from-desktop-resolution {
+  .footer-container {
+    padding-bottom: 54px;
+  }
+}
+
 .footer-first-container {
   margin-right: auto;
 }
@@ -53,14 +72,12 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: var(--primary-color);
-  margin-bottom: 40px;
 
   max-width: 170px;
   @media screen and (min-width: 768px) {
     font-size: 48px;
     line-height: 1.22;
     letter-spacing: 0.06em;
-    margin-bottom: 32px;
     max-width: 240px;
   }
 
@@ -68,7 +85,6 @@
     font-size: 58px;
     line-height: 1.22;
     letter-spacing: 0.06em;
-    margin-bottom: 54px;
     max-width: 100%;
   }
 }
@@ -126,20 +142,18 @@
   text-align: right;
 
   color: var(--secondary-color);
-  margin-bottom: 40px;
 
   @media screen and (min-width: 768px) {
     font-size: 14px;
     line-height: 1.86;
-    margin-bottom: 56px;
   }
   @media screen and (min-width: 1200px) {
     font-size: 16px;
     line-height: 1.86;
     letter-spacing: 0.02em;
-    margin-bottom: 60px;
   }
 }
+
 .contact__number {
   color: var(--primary-color);
 }
