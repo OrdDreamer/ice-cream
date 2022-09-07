@@ -55,7 +55,7 @@
 
 .product__link {
   position: absolute;
-  bottom: 8px;
+  bottom: 52px;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -94,6 +94,7 @@
   min-height: 420px;
   border-radius: 30px;
   flex-basis: calc((100% - 64px) / 3);
+  padding-bottom: 52px;
 }
 .product-one {
   background-color: #aec6a5;
