@@ -114,7 +114,7 @@
 .footer-list__icon {
   fill: var(--primary-background);
   transition: fill var(--transition-hover);
-  &:hover {
+  .footer-list__link:hover & {
     fill: var(--primary-color);
   }
 }
