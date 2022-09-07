@@ -199,7 +199,7 @@
 
 .contacts__buttons {
     display: flex;
-    
+
     justify-content: center;
     align-items: center;
     margin-top: 32px;
@@ -261,7 +261,7 @@
 
 
 
-    display: inline-flex;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -271,14 +271,14 @@
     border: 2px solid var(--secondary-background);
     border-radius: 10px;
 
-    @media screen and (max-width:767px) {
+    @include media-to-tablet-resolution {
         max-width: 280px;
         gap: 20px;
         padding: 28px;
     }
 
-    @media screen and (min-width:768px) {
-        max-width: 568px;
+    @include media-from-tablet-resolution {
+        width: 568px;
         gap: 32px;
         padding: 32px 60px;
     }
@@ -399,8 +399,8 @@
         font-size: 12px;
         line-height: 140%;
         /* identical to box height, or 17px */
-    
-    
+
+
         color: #131313;
     }
 }
