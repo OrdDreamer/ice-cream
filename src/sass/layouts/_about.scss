@@ -47,7 +47,7 @@
   color: var(--primary-color);
 }
 
-.filled-button__text {
+.about__read-more-button {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.21;
@@ -94,7 +94,7 @@
     display: none;
   }
 
-  .about__list-text {
+  .about__content-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -136,14 +136,13 @@
     margin-bottom: 79px;
   }
 
-  .about__list-text {
+  .about__content-wrapper {
     position: relative;
-    width: 336px;
     margin-left: auto;
-    margin-right: 0;
+    width: 336px;
   }
 
-  .about__list-text::before {
+  .about__content-wrapper::before {
     content: '';
     width: 330px;
     height: 330px;
@@ -156,7 +155,7 @@
     border-radius: 165.879px;
   }
 
-  .about__list-text::after {
+  .about__content-wrapper::after {
     content: '';
     width: 330px;
     height: 330px;
@@ -184,7 +183,7 @@
     text-align: left;
   }
 
-  .filled-button__text {
+  .about__read-more-button {
     font-weight: 600;
     font-size: 14px;
     line-height: 1.28;
@@ -194,7 +193,7 @@
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
   (min-resolution: 192dpi) and (min-width: 768px),
   (min-resolution: 2dppx) and (min-width: 768px) {
-  .about__list-text::after {
+  .about__content-wrapper::after {
     background-image: url(../images/about/tablet/cow-tablet@2x.png);
     background-size: cover;
   }
@@ -213,13 +212,12 @@
     margin-bottom: 172px;
   }
 
-  .about__list-text {
+  .about__content-wrapper {
     width: 463px;
-
     margin-right: 105px;
   }
 
-  .about__list-text::before {
+  .about__content-wrapper::before {
     content: '';
     width: 490px;
     height: 490px;
@@ -230,7 +228,7 @@
     box-shadow: 0px 8px 30px rgba(153, 114, 23, 0.25);
     border-radius: 250px;
   }
-  .about__list-text::after {
+  .about__content-wrapper::after {
     content: '';
     width: 490px;
     height: 490px;
@@ -257,7 +255,7 @@
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
   (min-resolution: 192dpi) and (min-width: 1200px),
   (min-resolution: 2dppx) and (min-width: 1200px) {
-  .about__list-text::after {
+  .about__content-wrapper::after {
     background-image: url(../images/about/desktop/cow-desktop@2x.png);
     background-size: cover;
   }
